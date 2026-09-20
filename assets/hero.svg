@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="242" viewBox="0 0 1200 242" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Bruno Ferreira — DevOps, Cloud, GenAI e Legal Tech</title>
+  <desc id="desc">Identidade em verde-lima e ciano sobre fundo escuro, com um símbolo jurídico ligado a circuitos.</desc>
+  <defs>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" stroke="#253743"/></pattern>
+    <linearGradient id="edge" x2="1200" y2="242" gradientUnits="userSpaceOnUse"><stop stop-color="#C6FF5E"/><stop offset=".55" stop-color="#244047"/><stop offset="1" stop-color="#45DFFF"/></linearGradient>
+    <style>.pulse{animation:pulse 4s ease-in-out infinite}@keyframes pulse{0%,100%{opacity:.45}50%{opacity:1}}@media(prefers-reduced-motion:reduce){.pulse{animation:none}}</style>
+  </defs>
+  <rect width="1200" height="242" rx="16" fill="#091017"/>
+  <rect x=".75" y=".75" width="1198.5" height="240.5" rx="15.25" stroke="url(#edge)" stroke-opacity=".75" stroke-width="1.5"/>
+  <path d="M820 1H1183Q1199 1 1199 17V225Q1199 241 1183 241H820Z" fill="url(#grid)" opacity=".45"/>
+  <path d="M39 42H61" stroke="#C6FF5E" stroke-width="3"/>
+  <text x="73" y="47" fill="#C6FF5E" font-family="Consolas,monospace" font-size="14" letter-spacing="2.5">BRUNOFLMA / LEGAL TECH</text>
+  <text x="35" y="130" fill="#F0F6FC" font-family="'Arial Black','DejaVu Sans',sans-serif" font-size="67" font-weight="900" letter-spacing="-3">BRUNO <tspan fill="#C6FF5E">FERREIRA</tspan><tspan fill="#45DFFF">.</tspan></text>
+  <text x="40" y="174" fill="#C2CFDB" font-family="'Segoe UI',sans-serif" font-size="24">Experiência em TI. Novas possibilidades para o Direito.</text>
+  <text x="40" y="216" fill="#7E98A7" font-family="Consolas,monospace" font-size="14" letter-spacing="2">DEVOPS  /  CLOUD  /  GENAI  /  LEGAL TECH</text>
+  <g stroke="#315460" stroke-width="1.5"><circle cx="1023" cy="122" r="81"/><circle cx="1023" cy="122" r="100" stroke-dasharray="3 9"/><path d="M897 80H944M1103 154H1158M982 40V62M1065 181V208"/></g>
+  <rect x="978" y="77" width="90" height="90" rx="20" fill="#10212A" stroke="#45DFFF" stroke-width="1.5"/>
+  <text x="1023" y="145" fill="#C6FF5E" font-family="Georgia,serif" font-size="75" text-anchor="middle">§</text>
+  <g class="pulse"><circle cx="948" cy="94" r="4" fill="#C6FF5E"/><circle cx="1090" cy="168" r="4" fill="#45DFFF"/><circle cx="1065" cy="208" r="3" fill="#C6FF5E"/></g>
+</svg>

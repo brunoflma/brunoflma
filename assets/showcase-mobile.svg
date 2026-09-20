@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Projetos de legal tech e atividade pública</title>
+  <desc id="desc">JurisprudênciaIA MCP e Jusmanizer, seguidos de um resumo dos projetos públicos.</desc>
+  <rect x=".75" y=".75" width="598.5" height="798.5" rx="14" fill="#0B121A" stroke="#2D414C" stroke-width="1.5"/>
+  <path d="M1 214H599M1 427H599" stroke="#2D414C"/>
+  <g font-family="Consolas,monospace" font-size="19" letter-spacing="1.2"><text x="25" y="38" fill="#C6FF5E">01 / PESQUISA JURÍDICA</text><text x="25" y="252" fill="#45DFFF">02 / ESCRITA JURÍDICA</text><text x="25" y="468" fill="#A4B9C6">CÓDIGO ABERTO</text></g>
+  <g font-family="'Segoe UI',sans-serif"><text x="24" y="93" fill="#F0F6FC" font-size="40" font-weight="700" letter-spacing="-1">JurisprudênciaIA <tspan fill="#C6FF5E">MCP</tspan></text><text x="25" y="139" fill="#AFBFCC" font-size="24">Jurisprudência brasileira no seu</text><text x="25" y="174" fill="#AFBFCC" font-size="24">assistente de IA, via MCP.</text><text x="24" y="307" fill="#F0F6FC" font-size="40" font-weight="700" letter-spacing="-1">Jusmanizer<tspan fill="#45DFFF">_</tspan></text><text x="25" y="353" fill="#AFBFCC" font-size="24">Escrita jurídica mais natural,</text><text x="25" y="388" fill="#AFBFCC" font-size="24">com atenção ao conteúdo.</text><text id="metric-projects" x="25" y="537" fill="#C6FF5E" font-size="55" font-weight="700">7</text><text id="metric-stars" x="324" y="537" fill="#45DFFF" font-size="55" font-weight="700">29</text><text x="27" y="565" fill="#AFBFCC" font-size="22">projetos públicos</text><text x="326" y="565" fill="#AFBFCC" font-size="22">estrelas</text></g>
+  <path d="M25 589H575" stroke="#253743"/>
+  <g font-family="'Segoe UI',sans-serif" font-size="22"><text id="recent-name-0" x="26" y="625" fill="#E1E9EF">jurisprudenciaia-mcp</text><text id="recent-date-0" x="574" y="625" fill="#8BA3B1" text-anchor="end">20/09</text><text id="recent-name-1" x="26" y="666" fill="#E1E9EF">claude-session-linker</text><text id="recent-date-1" x="574" y="666" fill="#8BA3B1" text-anchor="end">20/09</text><text id="recent-name-2" x="26" y="707" fill="#E1E9EF">md-studio</text><text id="recent-date-2" x="574" y="707" fill="#8BA3B1" text-anchor="end">20/09</text></g>
+  <path d="M25 733H575" stroke="#253743"/>
+  <text id="updated-at" x="25" y="771" fill="#8BA3B1" font-family="Consolas,monospace" font-size="19">Dados públicos · 20/09/2026</text>
+</svg>
