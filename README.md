@@ -5,9 +5,13 @@
 
 ### Da infraestrutura à IA aplicada ao Direito.
 
-Sou **Bruno Ferreira**, profissional de TI com **mais de 15 anos de experiência** em infraestrutura, sistemas, redes e segurança. Hoje direciono essa trajetória para **DevOps, Cloud e IA Generativa**, com foco crescente em soluções para o trabalho jurídico.
+Sou **Bruno Ferreira**, profissional de TI com **mais de 15 anos de experiência** em infraestrutura, sistemas, redes e segurança. 
 
-Minha atuação em **legal tech** parte de tarefas concretas: levar a pesquisa de jurisprudência para os assistentes de IA, aprimorar a revisão de textos jurídicos e organizar o trabalho com documentos. É nessa frente que desenvolvo o **JurisprudênciaIA MCP** e o **Jusmanizer**, além de ferramentas para dar continuidade ao trabalho com IA.
+Hoje direciono essa trajetória para **DevOps, Cloud e IA Generativa**, com foco crescente em soluções para o trabalho jurídico.
+
+Minha atuação em **legal tech** parte de tarefas concretas: levar a pesquisa de jurisprudência para os assistentes de IA, aprimorar a revisão de textos jurídicos e organizar o trabalho com documentos. 
+
+É nessa frente que desenvolvo o **JurisprudênciaIA MCP** e o **Jusmanizer**, além de ferramentas para dar continuidade ao trabalho com IA.
 
 <p>
 <picture>
@@ -55,11 +59,13 @@ Integrações com **Claude, ChatGPT e Codex**, APIs e instruções reutilizávei
 <details>
 <summary><strong>Trajetória, certificações e compartilhamento de conhecimento</strong></summary>
 
-Minha base profissional está na infraestrutura de TI: administração de sistemas, redes, servidores e segurança. A automação e a cultura DevOps conectam essa experiência ao trabalho atual com cloud e IA generativa.
+Minha base profissional está na infraestrutura de TI: administração de sistemas, redes, servidores e segurança. 
+
+A automação e a cultura DevOps conectam essa experiência ao trabalho atual com cloud e IA generativa.
 
 Ao longo dessa trajetória, obtive certificações como **AWS Cloud Practitioner**, **Google Cloud Digital Leader**, **Azure Fundamentals**, **ITIL** e **Scrum Fundamentals**. Os detalhes estão no meu [LinkedIn](https://www.linkedin.com/in/brunoflma/).
 
-Também fui idealizador de uma célula de incentivo a certificações na Faculdade Farias Brito e participei de iniciativas voluntárias de inclusão digital. Compartilhar conhecimento faz parte de como aprendo e trabalho.
+Compartilhar conhecimento faz parte de como aprendo e trabalho.
 
 </details>
 
