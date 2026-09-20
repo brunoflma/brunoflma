@@ -5,7 +5,7 @@
 
 ### Da infraestrutura à IA aplicada ao Direito.
 
-Sou **Bruno Ferreira**, profissional de TI com **mais de 15 anos de experiência** em infraestrutura, sistemas, redes e segurança. Hoje direciono essa trajetória para **DevOps, cloud e IA generativa**, com foco crescente em soluções para o trabalho jurídico.
+Sou **Bruno Ferreira**, profissional de TI com **mais de 15 anos de experiência** em infraestrutura, sistemas, redes e segurança. Hoje direciono essa trajetória para **DevOps, Cloud e IA Generativa**, com foco crescente em soluções para o trabalho jurídico.
 
 Minha atuação em **legal tech** parte de tarefas concretas: levar a pesquisa de jurisprudência para os assistentes de IA, aprimorar a revisão de textos jurídicos e organizar o trabalho com documentos. É nessa frente que desenvolvo o **JurisprudênciaIA MCP** e o **Jusmanizer**, além de ferramentas para dar continuidade ao trabalho com IA.
 
@@ -64,5 +64,3 @@ Também fui idealizador de uma célula de incentivo a certificações na Faculda
 </details>
 
 **[Vamos conversar pelo LinkedIn ↗](https://www.linkedin.com/in/brunoflma/)** · Ideias, dúvidas e contribuições também são bem-vindas nas issues dos projetos.
-
-<sub>O painel usa apenas repositórios públicos próprios, excluindo forks e este README. Atualização semanal.</sub>
