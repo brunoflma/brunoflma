@@ -3,6 +3,8 @@
   <img src="./assets/hero.svg" width="100%" alt="Bruno Ferreira — DevOps, Cloud, IA generativa e Legal Tech.">
 </picture>
 
+**[Projetos](#projetos) · [Tecnologias](#tecnologias) · [Trajetória](#trajetoria) · [Contato](#contato)**
+
 ### Da infraestrutura à IA aplicada ao Direito.
 
 Sou **Bruno Ferreira**, profissional de TI com **mais de 15 anos de experiência** em infraestrutura, sistemas, redes e segurança. 
@@ -12,6 +14,13 @@ Hoje direciono essa trajetória para **DevOps, Cloud e IA Generativa**, com foco
 Minha atuação em **legal tech** parte de tarefas concretas: levar a pesquisa de jurisprudência para os assistentes de IA, aprimorar a revisão de textos jurídicos e organizar o trabalho com documentos. 
 
 É nessa frente que desenvolvo o **JurisprudênciaIA MCP** e o **Jusmanizer**. O **Claude Session Linker** e o **MD Studio** completam esse trabalho com ferramentas para dar continuidade às conversas e organizar documentos.
+
+<p>
+  <a href="https://www.linkedin.com/in/brunoflma/" title="Conversar com Bruno Ferreira no LinkedIn"><img src="./assets/badges/linkedin.svg" width="168" height="36" alt="Conversar no LinkedIn"></a>
+  <a href="https://github.com/brunoflma?tab=repositories" title="Explorar os repositórios públicos"><img src="./assets/badges/projects.svg" width="168" height="36" alt="Explorar projetos públicos"></a>
+</p>
+
+<a name="projetos"></a>
 
 #### Quatro projetos para conhecer de perto
 
@@ -57,6 +66,8 @@ Minha atuação em **legal tech** parte de tarefas concretas: levar a pesquisa d
   </a>
 </p>
 
+<a name="tecnologias"></a>
+
 #### Tecnologias que conectam essas ideias
 
 <p>
@@ -69,6 +80,12 @@ Minha atuação em **legal tech** parte de tarefas concretas: levar a pesquisa d
 </p>
 
 Integrações com **Claude, ChatGPT e Codex**, APIs e instruções reutilizáveis para assistentes de IA.
+
+| Na prática | Tecnologias nos projetos |
+| :--- | :--- |
+| Conectar assistentes a serviços e ferramentas | TypeScript, JavaScript, MCP e Cloudflare Workers |
+| Automatizar tarefas e organizar sessões | Python |
+| Criar interfaces para leitura e edição de documentos | HTML, CSS e JavaScript |
 
 <details>
 <summary><strong>Por dentro dos quatro projetos em destaque</strong></summary>
@@ -93,8 +110,12 @@ Integrações com **Claude, ChatGPT e Codex**, APIs e instruções reutilizávei
 
 </details>
 
+<a name="trajetoria"></a>
+
+#### Trajetória e certificações
+
 <details>
-<summary><strong>Trajetória, certificações e compartilhamento de conhecimento</strong></summary>
+<summary><strong>Da infraestrutura ao desenvolvimento de ferramentas com IA</strong></summary>
 
 Minha base profissional está na infraestrutura de TI: administração de sistemas, redes, servidores e segurança. 
 
@@ -106,4 +127,12 @@ Compartilhar conhecimento faz parte de como aprendo e trabalho.
 
 </details>
 
-**[Vamos conversar pelo LinkedIn ↗](https://www.linkedin.com/in/brunoflma/)** · Ideias, dúvidas e contribuições também são bem-vindas nas issues dos projetos.
+<a name="contato"></a>
+
+#### Vamos conversar
+
+DevOps, Cloud, IA generativa e ferramentas para o trabalho jurídico são os temas que conectam meus projetos.
+
+**[Fale comigo pelo LinkedIn ↗](https://www.linkedin.com/in/brunoflma/)**
+
+Para dúvidas de uso, sugestões ou contribuições, abra uma issue no repositório do projeto correspondente.
