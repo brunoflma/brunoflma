@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="245" viewBox="0 0 600 245" fill="none" role="img" aria-labelledby="title desc">
+<title id="title">JurisprudênciaIA MCP</title><desc id="desc">Jurisprudência brasileira no seu assistente de IA. Conecte pesquisa e raciocínio no mesmo fluxo. Conheça a apresentação do projeto.</desc>
+<rect x="1" y="1" width="598" height="243" rx="14" fill="#0B121A" stroke="#2D414C" stroke-width="1.5"/>
+<path d="M26 51h38" stroke="#C6FF5E" stroke-width="3"/>
+<text x="26" y="34" fill="#C6FF5E" font-family="Consolas,monospace" font-size="16" letter-spacing="1">01 / PESQUISA JURÍDICA</text>
+<text x="24" y="96" fill="#F0F6FC" font-family="'Segoe UI',sans-serif" font-size="38" font-weight="700" letter-spacing="-1">JurisprudênciaIA<tspan fill="#C6FF5E"> MCP</tspan></text>
+<g fill="#AFBFCC" font-family="'Segoe UI',sans-serif" font-size="25">
+<text x="26" y="140">Pesquisa jurídica no seu assistente.</text>
+<text x="26" y="174">Conecte pesquisa e raciocínio.</text></g>
+<text x="26" y="219" fill="#C6FF5E" font-family="Consolas,monospace" font-size="16" letter-spacing="1">CONHECER O PROJETO</text><path d="M543 219v-15h-15m0 15 15-15" stroke="#C6FF5E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

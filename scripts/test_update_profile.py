@@ -2,8 +2,30 @@
 import unittest
 import xml.etree.ElementTree as ET
 from datetime import date
+from html.parser import HTMLParser
 
-from update_profile import ASSETS, render, summarize
+from update_profile import ASSETS, ROOT, render, summarize
+
+
+class CardLinks(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.href = None
+        self.cards = []
+        self.sources = []
+
+    def handle_starttag(self, tag, attrs):
+        values = dict(attrs)
+        if tag == 'a':
+            self.href = values.get('href')
+        if tag == 'img' and '/projects/' in values.get('src', ''):
+            self.cards.append((values['src'], self.href))
+        if tag == 'source' and '/projects/' in values.get('srcset', ''):
+            self.sources.append(values['srcset'])
+
+    def handle_endtag(self, tag):
+        if tag == 'a':
+            self.href = None
 
 
 def repository(name, **overrides):
@@ -13,6 +35,20 @@ def repository(name, **overrides):
 
 
 class ProfileTests(unittest.TestCase):
+    def test_four_cards_have_their_own_landing_page_link(self):
+        parser = CardLinks()
+        parser.feed((ROOT / 'README.md').read_text(encoding='utf-8'))
+        expected = [('jurisprudenciaia', 'jurisprudenciaia-mcp'), ('jusmanizer', 'jusmanizer'),
+                    ('session-linker', 'claude-session-linker'), ('md-studio', 'md-studio')]
+        self.assertEqual(parser.cards, [(f'./assets/projects/{asset}.svg', f'https://brunoflma.github.io/{project}/') for asset, project in expected])
+        self.assertEqual(parser.sources, [f'./assets/projects/{asset}-mobile.svg' for asset, _ in expected])
+        for source, _ in parser.cards:
+            tree = ET.fromstring((ROOT / source).read_text(encoding='utf-8'))
+            self.assertEqual(tree.attrib['width'], '1200')
+        for source in parser.sources:
+            tree = ET.fromstring((ROOT / source).read_text(encoding='utf-8'))
+            self.assertEqual(tree.attrib['width'], '600')
+
     def test_only_owned_public_projects_count(self):
         rows = [repository("public"), repository("secret", private=True, visibility="private"),
                 repository("fork", fork=True), repository("brunoflma"),

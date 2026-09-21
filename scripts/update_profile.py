@@ -1,4 +1,4 @@
-"""Refresh the two profile panels from GitHub's public repositories endpoint."""
+"""Refresh the responsive metrics panels from GitHub's public repositories endpoint."""
 import argparse
 import html
 import json

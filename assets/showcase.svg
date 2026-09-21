@@ -1,21 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="410" viewBox="0 0 1200 410" fill="none" role="img" aria-labelledby="title desc">
-  <title id="title">Projetos de legal tech e atividade pública</title>
-  <desc id="desc">JurisprudênciaIA MCP: pesquisa de jurisprudência com assistentes de IA. Jusmanizer: revisão de escrita jurídica em português. Painel de projetos públicos à direita.</desc>
-  <rect x=".75" y=".75" width="1198.5" height="408.5" rx="14" fill="#0B121A" stroke="#2D414C" stroke-width="1.5"/>
-  <path d="M792 1V409" stroke="#2D414C"/><path d="M1 205H791" stroke="#253743"/>
-  <g font-family="Consolas,monospace" font-size="14" letter-spacing="2"><text x="30" y="37" fill="#C6FF5E">01 / PESQUISA JURÍDICA</text><text x="30" y="243" fill="#45DFFF">02 / ESCRITA JURÍDICA</text><text x="821" y="37" fill="#A4B9C6">CÓDIGO ABERTO</text></g>
-  <g font-family="'Segoe UI',sans-serif">
-    <text x="28" y="88" fill="#F0F6FC" font-size="39" font-weight="700" letter-spacing="-1">JurisprudênciaIA <tspan fill="#C6FF5E">MCP</tspan></text>
-    <text x="30" y="126" fill="#AFBFCC" font-size="22">Jurisprudência brasileira no seu assistente de IA.</text><text x="30" y="158" fill="#AFBFCC" font-size="22">Conecte pesquisa e raciocínio no mesmo fluxo.</text>
-    <text x="28" y="294" fill="#F0F6FC" font-size="39" font-weight="700" letter-spacing="-1">Jusmanizer<tspan fill="#45DFFF">_</tspan></text>
-    <text x="30" y="332" fill="#AFBFCC" font-size="22">Escrita jurídica mais natural, com voz própria.</text><text x="30" y="364" fill="#AFBFCC" font-size="22">Revisão orientada a preservar o conteúdo.</text>
-    <text id="metric-projects" x="820" y="105" fill="#C6FF5E" font-size="53" font-weight="700">7</text><text id="metric-stars" x="997" y="105" fill="#45DFFF" font-size="53" font-weight="700">29</text>
-    <text x="822" y="134" fill="#AFBFCC" font-size="18">projetos públicos</text><text x="999" y="134" fill="#AFBFCC" font-size="18">estrelas</text>
-  </g>
-  <path d="M821 159H1170" stroke="#253743"/>
-  <text x="821" y="191" fill="#A4B9C6" font-family="Consolas,monospace" font-size="13" letter-spacing="1.5">REPOSITÓRIOS ATUALIZADOS</text>
-  <g font-family="'Segoe UI',sans-serif" font-size="17"><text id="recent-name-0" x="837" y="231" fill="#E1E9EF">jurisprudenciaia-mcp</text><text id="recent-date-0" x="1168" y="231" fill="#8BA3B1" text-anchor="end">20/09</text><text id="recent-name-1" x="837" y="272" fill="#E1E9EF">claude-session-linker</text><text id="recent-date-1" x="1168" y="272" fill="#8BA3B1" text-anchor="end">20/09</text><text id="recent-name-2" x="837" y="313" fill="#E1E9EF">md-studio</text><text id="recent-date-2" x="1168" y="313" fill="#8BA3B1" text-anchor="end">20/09</text></g>
-  <g fill="#C6FF5E"><circle cx="823" cy="225" r="3"/><circle cx="823" cy="266" r="3"/><circle cx="823" cy="307" r="3"/></g>
-  <path d="M821 339H1170" stroke="#253743"/>
-  <text id="updated-at" x="821" y="371" fill="#8BA3B1" font-family="Consolas,monospace" font-size="13">Dados públicos · 20/09/2026</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="205" viewBox="0 0 1200 205" fill="none" role="img" aria-labelledby="title desc">
+<title id="title">Atividade pública no GitHub</title><desc id="desc">Totais de projetos públicos e estrelas, com os três repositórios atualizados mais recentemente. Fonte: API pública do GitHub. Atualização semanal.</desc>
+<rect x="1" y="1" width="1198" height="203" rx="14" fill="#0B121A" stroke="#2D414C" stroke-width="1.5"/>
+<path d="M417 1v203" stroke="#2D414C"/>
+<g font-family="Consolas,monospace" font-size="11" letter-spacing="1.6" fill="#A4B9C6"><text x="31" y="31">ATIVIDADE PÚBLICA</text><text x="452" y="31">REPOSITÓRIOS ATUALIZADOS</text></g>
+<g font-family="'Segoe UI',sans-serif"><text id="metric-projects" x="30" y="101" fill="#C6FF5E" font-size="53" font-weight="700">7</text><text id="metric-stars" x="218" y="101" fill="#45DFFF" font-size="53" font-weight="700">32</text><text x="32" y="129" fill="#AFBFCC" font-size="18">projetos públicos</text><text x="220" y="129" fill="#AFBFCC" font-size="18">estrelas</text></g>
+<g font-family="'Segoe UI',sans-serif" font-size="18"><text id="recent-name-0" x="472" y="73" fill="#E1E9EF">claude-session-linker</text><text id="recent-date-0" x="1160" y="73" fill="#8BA3B1" text-anchor="end">21/09</text><text id="recent-name-1" x="472" y="111" fill="#E1E9EF">jurisprudenciaia-mcp</text><text id="recent-date-1" x="1160" y="111" fill="#8BA3B1" text-anchor="end">21/09</text><text id="recent-name-2" x="472" y="149" fill="#E1E9EF">md-studio</text><text id="recent-date-2" x="1160" y="149" fill="#8BA3B1" text-anchor="end">21/09</text></g>
+<g fill="#C6FF5E"><circle cx="455" cy="67" r="3"/><circle cx="455" cy="105" r="3"/><circle cx="455" cy="143" r="3"/></g>
+<text id="updated-at" x="31" y="180" fill="#8BA3B1" font-family="Consolas,monospace" font-size="12">Dados públicos · 21/09/2026</text>
+<text x="452" y="182" fill="#8BA3B1" font-family="Consolas,monospace" font-size="11">GITHUB API · ATUALIZAÇÃO SEMANAL</text>
 </svg>

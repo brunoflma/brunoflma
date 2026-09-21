@@ -11,16 +11,51 @@ Hoje direciono essa trajetória para **DevOps, Cloud e IA Generativa**, com foco
 
 Minha atuação em **legal tech** parte de tarefas concretas: levar a pesquisa de jurisprudência para os assistentes de IA, aprimorar a revisão de textos jurídicos e organizar o trabalho com documentos. 
 
-É nessa frente que desenvolvo o **JurisprudênciaIA MCP** e o **Jusmanizer**, além de ferramentas para dar continuidade ao trabalho com IA.
+É nessa frente que desenvolvo o **JurisprudênciaIA MCP** e o **Jusmanizer**. O **Claude Session Linker** e o **MD Studio** completam esse trabalho com ferramentas para dar continuidade às conversas e organizar documentos.
+
+#### Quatro projetos para conhecer de perto
 
 <p>
-<picture>
-  <source media="(max-width: 600px)" srcset="./assets/showcase-mobile.svg">
-  <img src="./assets/showcase.svg" width="100%" alt="Legal tech em prática: JurisprudênciaIA MCP conecta pesquisa jurídica e assistentes de IA; Jusmanizer aprimora a naturalidade da escrita jurídica. À direita, um resumo dos meus projetos públicos no GitHub.">
-</picture>
+  <a href="https://brunoflma.github.io/jurisprudenciaia-mcp/" title="Conhecer o JurisprudênciaIA MCP">
+    <picture>
+      <source media="(max-width: 600px)" srcset="./assets/projects/jurisprudenciaia-mobile.svg">
+      <img src="./assets/projects/jurisprudenciaia.svg" width="100%" alt="JurisprudênciaIA MCP — pesquisa jurídica no seu assistente de IA. Clique para conhecer o projeto.">
+    </picture>
+  </a>
+</p>
+<p>
+  <a href="https://brunoflma.github.io/jusmanizer/" title="Conhecer o Jusmanizer">
+    <picture>
+      <source media="(max-width: 600px)" srcset="./assets/projects/jusmanizer-mobile.svg">
+      <img src="./assets/projects/jusmanizer.svg" width="100%" alt="Jusmanizer — escrita jurídica mais natural, com atenção ao conteúdo. Clique para conhecer a skill.">
+    </picture>
+  </a>
+</p>
+<p>
+  <a href="https://brunoflma.github.io/claude-session-linker/" title="Conhecer o Claude Session Linker">
+    <picture>
+      <source media="(max-width: 600px)" srcset="./assets/projects/session-linker-mobile.svg">
+      <img src="./assets/projects/session-linker.svg" width="100%" alt="Claude Session Linker — vincule e compare sessões entre contas no mesmo computador. Clique para conhecer o aplicativo.">
+    </picture>
+  </a>
+</p>
+<p>
+  <a href="https://brunoflma.github.io/md-studio/" title="Conhecer o MD Studio">
+    <picture>
+      <source media="(max-width: 600px)" srcset="./assets/projects/md-studio-mobile.svg">
+      <img src="./assets/projects/md-studio.svg" width="100%" alt="MD Studio — seu Markdown, pronto para ser lido. Três modos em um único HTML. Clique para conhecer o editor.">
+    </picture>
+  </a>
 </p>
 
-**[JurisprudênciaIA MCP ↗](https://brunoflma.github.io/jurisprudenciaia-mcp/)** &nbsp; · &nbsp; **[Jusmanizer ↗](https://brunoflma.github.io/jusmanizer/)** &nbsp; · &nbsp; [Todos os projetos ↗](https://github.com/brunoflma?tab=repositories)
+<p>
+  <a href="https://github.com/brunoflma?tab=repositories" title="Ver todos os projetos públicos">
+    <picture>
+      <source media="(max-width: 600px)" srcset="./assets/showcase-mobile.svg">
+      <img src="./assets/showcase.svg" width="100%" alt="Resumo dos projetos públicos e repositórios atualizados recentemente. Métricas do GitHub atualizadas semanalmente, com data de consulta.">
+    </picture>
+  </a>
+</p>
 
 #### Tecnologias que conectam essas ideias
 
@@ -36,21 +71,23 @@ Minha atuação em **legal tech** parte de tarefas concretas: levar a pesquisa d
 Integrações com **Claude, ChatGPT e Codex**, APIs e instruções reutilizáveis para assistentes de IA.
 
 <details>
-<summary><strong>Por dentro dos projetos jurídicos</strong></summary>
+<summary><strong>Por dentro dos quatro projetos em destaque</strong></summary>
 
 **[JurisprudênciaIA MCP](https://github.com/brunoflma/jurisprudenciaia-mcp)** — conector auto-hospedado em Cloudflare Workers que permite pesquisar jurisprudência brasileira com assistentes compatíveis com MCP. O projeto cuida da integração e do acesso; o serviço de pesquisa é o JurisprudênciaIA.
 
 **[Jusmanizer](https://github.com/brunoflma/jusmanizer)** — skill de revisão de petições, pareceres, contratos e outros textos jurídicos em português. As instruções orientam a remover padrões artificiais de escrita e preservar argumentos, fatos, pedidos e fontes.
 
+**[Claude Session Linker](https://github.com/brunoflma/claude-session-linker)** — interface local para visualizar, vincular e comparar sessões Code e Cowork do Claude Desktop entre contas no mesmo computador.
+
+**[MD Studio](https://github.com/brunoflma/md-studio)** — leitura, edição visual e edição do código Markdown em um único arquivo HTML, com a identidade visual voltada ao documento.
+
 </details>
 
 <details>
-<summary><strong>Outras ferramentas para trabalhar com IA e documentos</strong></summary>
+<summary><strong>Outras ferramentas para acompanhar o contexto da IA</strong></summary>
 
 | Projeto | Para que serve |
 | :--- | :--- |
-| **[Claude Session Linker](https://github.com/brunoflma/claude-session-linker)** | Visualizar, vincular e comparar sessões do Claude Desktop entre contas no mesmo computador. |
-| **[MD Studio](https://github.com/brunoflma/md-studio)** | Ler e editar Markdown no navegador, em um único arquivo HTML. |
 | **[Context Guardian](https://github.com/brunoflma/context-guardian)** | Preservar decisões e preparar a retomada de conversas longas com IA. |
 | **[Context Status](https://github.com/brunoflma/context-status)** | Estimar o uso de contexto e acompanhar decisões em conversas com IA. |
 
