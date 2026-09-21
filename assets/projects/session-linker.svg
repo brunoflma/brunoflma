@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="190" viewBox="0 0 1200 190" fill="none" role="img" aria-labelledby="title desc">
 <title id="title">Claude Session Linker</title><desc id="desc">Vincule e compare sessões Code e Cowork entre contas. Organize a continuidade no mesmo computador. Conheça a apresentação do projeto.</desc>
 <rect x="1" y="1" width="1198" height="188" rx="14" fill="#0B121A" stroke="#2D414C" stroke-width="1.5"/>
-<path d="M32 49h45" stroke="#45DFFF" stroke-width="3"/>
-<text x="32" y="32" fill="#45DFFF" font-family="Consolas,monospace" font-size="12" letter-spacing="1.8">03 / CONTINUIDADE COM IA</text>
-<text x="30" y="98" fill="#F0F6FC" font-family="'Segoe UI',sans-serif" font-size="40" font-weight="700" letter-spacing="-1">Claude Session Linker<tspan fill="#45DFFF"></tspan></text>
+<path d="M32 49h45" stroke="#C4A1FF" stroke-width="3"/>
+<text x="32" y="32" fill="#C4A1FF" font-family="Consolas,monospace" font-size="12" letter-spacing="1.8">03 / CONTINUIDADE COM IA</text>
+<text x="30" y="98" fill="#F0F6FC" font-family="'Segoe UI',sans-serif" font-size="40" font-weight="700" letter-spacing="-1">Claude Session Linker<tspan fill="#C4A1FF"></tspan></text>
 <g fill="#AFBFCC" font-family="'Segoe UI',sans-serif" font-size="21">
 <text x="32" y="134">Vincule e compare sessões Code e Cowork entre contas.</text>
 <text x="32" y="165">Organize a continuidade no mesmo computador.</text></g>
-<rect x="928" y="67" width="234" height="57" rx="8" fill="#14232B" stroke="#45DFFF" stroke-opacity=".5"/><text x="948" y="101" fill="#45DFFF" font-family="Consolas,monospace" font-size="13" letter-spacing=".6">CONHECER O PROJETO</text><path d="M1142 108V91h-17m0 17 17-17" stroke="#45DFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><text x="931" y="153" fill="#819AA9" font-family="Consolas,monospace" font-size="10" letter-spacing="1">APRESENTAÇÃO · GUIAS · GITHUB</text>
+<rect x="928" y="67" width="234" height="57" rx="8" fill="#211B30" stroke="#C4A1FF" stroke-opacity=".5"/><text x="948" y="101" fill="#C4A1FF" font-family="Consolas,monospace" font-size="13" letter-spacing=".6">CONHECER O PROJETO</text><path d="M1142 108V91h-17m0 17 17-17" stroke="#C4A1FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><text x="931" y="153" fill="#819AA9" font-family="Consolas,monospace" font-size="10" letter-spacing="1">APRESENTAÇÃO · GUIAS · GITHUB</text>
 </svg>
