@@ -20,7 +20,7 @@ Minha atuação em **legal tech** parte de tarefas concretas: levar a pesquisa d
 </picture>
 </p>
 
-**[JurisprudênciaIA MCP ↗](https://github.com/brunoflma/jurisprudenciaia-mcp)** &nbsp; · &nbsp; **[Jusmanizer ↗](https://brunoflma.github.io/jusmanizer/)** &nbsp; · &nbsp; [Todos os projetos ↗](https://github.com/brunoflma?tab=repositories)
+**[JurisprudênciaIA MCP ↗](https://brunoflma.github.io/jurisprudenciaia-mcp/)** &nbsp; · &nbsp; **[Jusmanizer ↗](https://brunoflma.github.io/jusmanizer/)** &nbsp; · &nbsp; [Todos os projetos ↗](https://github.com/brunoflma?tab=repositories)
 
 #### Tecnologias que conectam essas ideias
 
