@@ -36,7 +36,7 @@ Minha atuação em **legal tech** parte de tarefas concretas: levar a pesquisa d
   <a href="https://brunoflma.github.io/jusmanizer/" title="Conhecer o Jusmanizer">
     <picture>
       <source media="(max-width: 600px)" srcset="./assets/projects/jusmanizer-mobile.svg">
-      <img src="./assets/projects/jusmanizer.svg" width="100%" alt="Jusmanizer — escrita jurídica mais natural, com atenção ao conteúdo. Clique para conhecer a skill.">
+      <img src="./assets/projects/jusmanizer.svg" width="100%" alt="Jusmanizer. O argumento é seu. A escrita também. Skill aberta de revisão de estilo jurídico. Clique para conhecer.">
     </picture>
   </a>
 </p>
@@ -92,7 +92,7 @@ Integrações com **Claude, ChatGPT e Codex**, APIs e instruções reutilizávei
 
 **[JurisprudênciaIA MCP](https://github.com/brunoflma/jurisprudenciaia-mcp)** — conector auto-hospedado em Cloudflare Workers que permite pesquisar jurisprudência brasileira com assistentes compatíveis com MCP. O projeto cuida da integração e do acesso; o serviço de pesquisa é o JurisprudênciaIA.
 
-**[Jusmanizer](https://github.com/brunoflma/jusmanizer)** — skill de revisão de petições, pareceres, contratos e outros textos jurídicos em português. As instruções orientam a remover padrões artificiais de escrita e preservar argumentos, fatos, pedidos e fontes.
+**[Jusmanizer](https://github.com/brunoflma/jusmanizer)** — skill aberta de revisão de estilo jurídico em português, com 32 padrões e exemplos práticos. Orienta o assistente a retirar excessos da escrita sem alterar fatos, argumentos, pedidos e fontes. [Veja as demonstrações](https://brunoflma.github.io/jusmanizer/).
 
 **[Claude Session Linker](https://github.com/brunoflma/claude-session-linker)** — interface local para visualizar, vincular e comparar sessões Code e Cowork do Claude Desktop entre contas no mesmo computador.
 
