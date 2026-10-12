@@ -13,7 +13,7 @@ Hoje direciono essa trajetória para **DevOps, Cloud e IA Generativa**, com foco
 
 Minha atuação em **legal tech** parte de tarefas concretas: levar a pesquisa de jurisprudência para os assistentes de IA, aprimorar a revisão de textos jurídicos e organizar o trabalho com documentos. 
 
-É nessa frente que desenvolvo o **JurisprudênciaIA MCP** e o **Jusmanizer**. O **Claude Session Linker** e o **MD Studio** completam esse trabalho com ferramentas para dar continuidade às conversas e organizar documentos.
+É nessa frente que desenvolvo o **JurisprudênciaIA MCP**, com 14 ferramentas para pesquisa jurídica, e o **Jusmanizer**, com 33 padrões de revisão de estilo em português. O **Claude Session Linker** ajuda a retomar conversas entre contas locais, e o **MD Studio** reúne leitura e edição de Markdown no navegador.
 
 <p>
   <a href="https://www.linkedin.com/in/brunoflma/" title="Conversar com Bruno Ferreira no LinkedIn"><img src="./assets/badges/linkedin.svg" width="168" height="36" alt="Conversar no LinkedIn"></a>
@@ -28,7 +28,7 @@ Minha atuação em **legal tech** parte de tarefas concretas: levar a pesquisa d
   <a href="https://brunoflma.github.io/jurisprudenciaia-mcp/" title="Conhecer o JurisprudênciaIA MCP">
     <picture>
       <source media="(max-width: 600px)" srcset="./assets/projects/jurisprudenciaia-mobile.svg">
-      <img src="./assets/projects/jurisprudenciaia.svg" width="100%" alt="JurisprudênciaIA MCP — pesquisa jurídica no seu assistente de IA. Clique para conhecer o projeto.">
+      <img src="./assets/projects/jurisprudenciaia.svg" width="100%" alt="JurisprudênciaIA MCP — 14 ferramentas de pesquisa jurídica no Claude, Codex e outros clientes MCP. Clique para conhecer o projeto.">
     </picture>
   </a>
 </p>
@@ -36,7 +36,7 @@ Minha atuação em **legal tech** parte de tarefas concretas: levar a pesquisa d
   <a href="https://brunoflma.github.io/jusmanizer/" title="Conhecer o Jusmanizer">
     <picture>
       <source media="(max-width: 600px)" srcset="./assets/projects/jusmanizer-mobile.svg">
-      <img src="./assets/projects/jusmanizer.svg" width="100%" alt="Jusmanizer. O argumento é seu. A escrita também. Skill aberta de revisão de estilo jurídico. Clique para conhecer.">
+      <img src="./assets/projects/jusmanizer.svg" width="100%" alt="Jusmanizer. O argumento é seu. A escrita também. 33 padrões de revisão de estilo jurídico em sete grupos. Clique para conhecer.">
     </picture>
   </a>
 </p>
@@ -44,7 +44,7 @@ Minha atuação em **legal tech** parte de tarefas concretas: levar a pesquisa d
   <a href="https://brunoflma.github.io/claude-session-linker/" title="Conhecer o Claude Session Linker">
     <picture>
       <source media="(max-width: 600px)" srcset="./assets/projects/session-linker-mobile.svg">
-      <img src="./assets/projects/session-linker.svg" width="100%" alt="Claude Session Linker — vincule e compare sessões entre contas no mesmo computador. Clique para conhecer o aplicativo.">
+      <img src="./assets/projects/session-linker.svg" width="100%" alt="Claude Session Linker — encontre, vincule e compare sessões Code e Cowork entre contas locais, com backups. Clique para conhecer o aplicativo.">
     </picture>
   </a>
 </p>
@@ -52,7 +52,7 @@ Minha atuação em **legal tech** parte de tarefas concretas: levar a pesquisa d
   <a href="https://brunoflma.github.io/md-studio/" title="Conhecer o MD Studio">
     <picture>
       <source media="(max-width: 600px)" srcset="./assets/projects/md-studio-mobile.svg">
-      <img src="./assets/projects/md-studio.svg" width="100%" alt="MD Studio — seu Markdown, pronto para ser lido. Três modos em um único HTML. Clique para conhecer o editor.">
+      <img src="./assets/projects/md-studio.svg" width="100%" alt="MD Studio — leitura, edição visual e código Markdown em um único HTML. Clique para conhecer o editor.">
     </picture>
   </a>
 </p>
@@ -90,13 +90,13 @@ Integrações com **Claude, ChatGPT e Codex**, APIs e instruções reutilizávei
 <details>
 <summary><strong>Por dentro dos quatro projetos em destaque</strong></summary>
 
-**[JurisprudênciaIA MCP](https://github.com/brunoflma/jurisprudenciaia-mcp)** — conector auto-hospedado em Cloudflare Workers que permite pesquisar jurisprudência brasileira com assistentes compatíveis com MCP. O projeto cuida da integração e do acesso; o serviço de pesquisa é o JurisprudênciaIA.
+**[JurisprudênciaIA MCP](https://github.com/brunoflma/jurisprudenciaia-mcp)** — conector em Cloudflare Workers com **14 ferramentas** para pesquisar jurisprudência, precedentes e informativos, analisar teses e comparar duas teses na mesma conversa. Funciona com Claude, Codex e outros clientes MCP. O projeto cuida da integração e do acesso; o serviço de pesquisa é o JurisprudênciaIA. [Veja o catálogo e o guia de conexão](https://brunoflma.github.io/jurisprudenciaia-mcp/).
 
-**[Jusmanizer](https://github.com/brunoflma/jusmanizer)** — skill aberta de revisão de estilo jurídico em português, com 32 padrões e exemplos práticos. Orienta o assistente a retirar excessos da escrita sem alterar fatos, argumentos, pedidos e fontes. [Veja as demonstrações](https://brunoflma.github.io/jusmanizer/).
+**[Jusmanizer](https://github.com/brunoflma/jusmanizer)** — skill aberta de revisão de estilo jurídico em português, com **33 padrões em sete grupos**, exemplos práticos e prompts para a rotina da advocacia. Orienta o assistente a retirar excessos e repetições de petições, recursos, pareceres, minutas contratuais e comunicações, preservando fatos, nomes, valores, datas, pedidos, fontes e transcrições. [Veja as demonstrações](https://brunoflma.github.io/jusmanizer/).
 
-**[Claude Session Linker](https://github.com/brunoflma/claude-session-linker)** — interface local para visualizar, vincular e comparar sessões Code e Cowork do Claude Desktop entre contas no mesmo computador.
+**[Claude Session Linker](https://github.com/brunoflma/claude-session-linker)** — interface local para encontrar, vincular e comparar sessões **Code e Cowork** do Claude Desktop entre contas no mesmo computador. Cria cópias locais e mantém backups antes das alterações; as sessões Code podem continuar de forma independente em cada conta. [Conheça o fluxo e os cuidados de uso](https://brunoflma.github.io/claude-session-linker/).
 
-**[MD Studio](https://github.com/brunoflma/md-studio)** — leitura, edição visual e edição do código Markdown em um único arquivo HTML, com a identidade visual voltada ao documento.
+**[MD Studio](https://github.com/brunoflma/md-studio)** — **leitura, edição visual e código-fonte** de Markdown em um único arquivo HTML, aberto no navegador. Permite trabalhar diretamente no documento renderizado ou ajustar a sintaxe no código antes de salvar. [Explore os modos e o documento de exemplo](https://brunoflma.github.io/md-studio/#comecar).
 
 </details>
 

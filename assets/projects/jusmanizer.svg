@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="190" viewBox="0 0 1200 190" role="img" aria-labelledby="title desc">
   <title id="title">Jusmanizer</title>
-  <desc id="desc">O argumento é seu. A escrita também. Skill aberta de revisão de estilo jurídico. Conheça o projeto.</desc>
+  <desc id="desc">O argumento é seu. A escrita também. 33 padrões de revisão de estilo jurídico em sete grupos, preservando fatos e fontes. Conheça o projeto.</desc>
   <rect x="1" y="1" width="1198" height="188" rx="14" fill="#0b1118" stroke="#2c3e50" stroke-width="1.5"/>
   <text x="32" y="32" fill="#ccff80" font-family="Consolas,monospace" font-size="12" font-weight="600" letter-spacing="1.4">02 / REVISÃO DE ESTILO JURÍDICO</text>
   <path d="M32 49h45" stroke="#ccff80" stroke-width="3"/>
@@ -9,6 +9,8 @@
   <rect x="309" y="69" width="9" height="34" fill="#ccff80"/>
   <text x="32" y="137" fill="#dde3ed" font-family="Georgia,serif" font-size="26">O argumento é seu.</text>
   <text x="32" y="169" fill="#ccff80" font-family="Georgia,serif" font-size="26" font-style="italic">A escrita também.</text>
+  <text x="462" y="137" fill="#9aa9b9" font-family="'Segoe UI',sans-serif" font-size="21">33 padrões em sete grupos.</text>
+  <text x="462" y="169" fill="#9aa9b9" font-family="'Segoe UI',sans-serif" font-size="21">Fatos e fontes preservados.</text>
   <rect x="928" y="67" width="234" height="57" rx="8" fill="#131d27" stroke="#ccff80" stroke-opacity=".5"/>
   <text x="948" y="101" fill="#ccff80" font-family="Consolas,monospace" font-size="13" letter-spacing=".6">CONHECER A SKILL</text>
   <path d="M1142 108V91h-17m0 17 17-17" stroke="#ccff80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
