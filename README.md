@@ -3,13 +3,9 @@
   <img src="./assets/lex-profile/hero-v4.svg" width="100%" alt="Bruno Ferreira. Da infraestrutura às ferramentas com IA. Projetos abertos e soluções para o trabalho jurídico. DevOps, Cloud e IA generativa. Servidor, nuvem, banco de dados, código e documento em ilustração plana, no mesmo estilo dos projetos.">
 </picture>
 
-**[Projetos abertos](#projetos-abertos) · [Lex Operandi](#ecossistema) · [Tecnologias](#tecnologias) · [Trajetória](#trajetoria) · [Contato](#contato)**
-
 Sou **Bruno Ferreira**. Trabalho há mais de 15 anos com infraestrutura, sistemas, redes e segurança. Hoje aplico essa experiência em **DevOps, Cloud e IA generativa**, criando ferramentas para pesquisa, documentos e produtividade.
 
 Mantenho projetos abertos como **JurisprudênciaIA MCP, Jusmanizer, Claude Session Linker e MD Studio** e desenvolvo as soluções jurídicas do ecossistema **Lex Operandi**.
-
-**[Explore os projetos](#projetos-abertos) · [Conheça a Lex Operandi](#ecossistema) · [Converse comigo](https://www.linkedin.com/in/brunoflma/)**
 
 <a name="atividade"></a>
 
@@ -24,12 +20,14 @@ Mantenho projetos abertos como **JurisprudênciaIA MCP, Jusmanizer, Claude Sessi
 
 ## Projetos abertos
 
+<p>
 <a href="https://github.com/brunoflma?tab=repositories">
   <picture>
     <source media="(max-width: 1100px)" srcset="./assets/lex-profile/open-source-v3-mobile.svg">
     <img src="./assets/lex-profile/open-source-v3.svg" width="100%" alt="Ferramentas para usar, estudar e adaptar. Código, guias e exemplos públicos. Ilustração de código e documentação. Explore os repositórios.">
   </picture>
 </a>
+</p>
 
 <a href="https://brunoflma.github.io/jurisprudenciaia-mcp/">
   <picture>
