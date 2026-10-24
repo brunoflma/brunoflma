@@ -3,8 +3,20 @@ import unittest
 import xml.etree.ElementTree as ET
 from datetime import date
 from html.parser import HTMLParser
+from pathlib import Path
+from unittest.mock import patch
 
-from update_profile import ASSETS, ROOT, render, summarize
+from update_profile import ASSETS, ROOT, SVG, main, render, summarize
+
+
+PROJECTS = [('jurisprudenciaia', 'https://brunoflma.github.io/jurisprudenciaia-mcp/'),
+            ('jusmanizer', 'https://brunoflma.github.io/jusmanizer/'),
+            ('session-linker', 'https://brunoflma.github.io/claude-session-linker/'),
+            ('md-studio', 'https://brunoflma.github.io/md-studio/'),
+            ('eluxi', 'https://eluxi.bfldevlabs.studio/'),
+            ('fons', 'https://fons.bfldevlabs.studio/'),
+            ('zetema', 'https://zetema.bfldevlabs.studio/'),
+            ('dissero', 'https://dissero.bfldevlabs.studio/')]
 
 
 class CardLinks(HTMLParser):
@@ -18,9 +30,9 @@ class CardLinks(HTMLParser):
         values = dict(attrs)
         if tag == 'a':
             self.href = values.get('href')
-        if tag == 'img' and '/projects/' in values.get('src', ''):
+        if tag == 'img' and Path(values.get('src', '')).stem in dict(PROJECTS):
             self.cards.append((values['src'], self.href))
-        if tag == 'source' and '/projects/' in values.get('srcset', ''):
+        if tag == 'source' and Path(values.get('srcset', '')).stem.removesuffix('-mobile') in dict(PROJECTS):
             self.sources.append(values['srcset'])
 
     def handle_endtag(self, tag):
@@ -35,19 +47,19 @@ def repository(name, **overrides):
 
 
 class ProfileTests(unittest.TestCase):
-    def test_four_cards_have_their_own_landing_page_link(self):
+    def test_public_and_ecosystem_cards_have_equal_size_and_their_own_links(self):
         parser = CardLinks()
         parser.feed((ROOT / 'README.md').read_text(encoding='utf-8'))
-        expected = [('jurisprudenciaia', 'jurisprudenciaia-mcp'), ('jusmanizer', 'jusmanizer'),
-                    ('session-linker', 'claude-session-linker'), ('md-studio', 'md-studio')]
-        self.assertEqual(parser.cards, [(f'./assets/projects/{asset}.svg', f'https://brunoflma.github.io/{project}/') for asset, project in expected])
-        self.assertEqual(parser.sources, [f'./assets/projects/{asset}-mobile.svg' for asset, _ in expected])
+        self.assertEqual(parser.cards, [(f'./assets/lex-profile/{asset}.svg', url) for asset, url in PROJECTS])
+        self.assertEqual(parser.sources, [f'./assets/lex-profile/{asset}-mobile.svg' for asset, _ in PROJECTS])
         for source, _ in parser.cards:
             tree = ET.fromstring((ROOT / source).read_text(encoding='utf-8'))
             self.assertEqual(tree.attrib['width'], '1200')
+            self.assertEqual(tree.attrib['height'], '280')
         for source in parser.sources:
             tree = ET.fromstring((ROOT / source).read_text(encoding='utf-8'))
             self.assertEqual(tree.attrib['width'], '600')
+            self.assertEqual(tree.attrib['height'], '440')
 
     def test_only_owned_public_projects_count(self):
         rows = [repository("public"), repository("secret", private=True, visibility="private"),
@@ -74,7 +86,36 @@ class ProfileTests(unittest.TestCase):
                 ET.fromstring(result)
                 self.assertNotIn("<script>", result)
                 if rows:
-                    self.assertIn("&lt;script&gt;&amp;&quot;", result)
+                    field = ET.fromstring(result).find(f'.//{{{SVG}}}g[@id="recent-name-0"]')
+                    self.assertEqual(field.get("aria-label"), '<script>&"')
+                self.assertEqual(render(result, summarize(rows, date(2026, 9, 20))), result)
+
+    def test_dates_follow_fortaleza_instead_of_utc(self):
+        result = summarize([repository("late", pushed_at="2026-10-24T01:00:00Z")], date(2026, 10, 24))
+        self.assertEqual(result["recent"][0]["date"], "2026-10-23")
+
+    def test_provider_failure_preserves_both_panels(self):
+        before = [path.read_bytes() for path in ASSETS]
+        with patch('sys.argv', ['update_profile.py', '--write']), \
+                patch('update_profile.fetch_repositories', side_effect=OSError('provider unavailable')):
+            with self.assertRaises(OSError):
+                main()
+        self.assertEqual([path.read_bytes() for path in ASSETS], before)
+
+    def test_dynamic_fields_update_without_changing_the_static_artwork(self):
+        data = {"projects": 12, "stars": 1234, "recent": [{"name": "a" * 45, "date": "2026-10-23"}], "as_of": "2026-10-24"}
+        for path in ASSETS:
+            source = path.read_text(encoding="utf-8")
+            original, changed = ET.fromstring(source), ET.fromstring(render(source, data))
+            fields = {node.get("id"): node for node in changed.findall(f'{{{SVG}}}g') if node.get("id")}
+            self.assertEqual(fields["metric-projects"].get("aria-label"), "12")
+            self.assertEqual(fields["metric-stars"].get("aria-label"), "1,2k")
+            self.assertEqual(fields["recent-name-1"].get("aria-label"), "—")
+            limit = 26 if original.get("width") == "600" else 38
+            self.assertEqual(fields["recent-name-0"].get("aria-label"), "a" * (limit - 1) + "…")
+            self.assertEqual(fields["updated-at"].get("aria-label"), "Atualizado em 24/10/2026")
+            static = lambda tree: [ET.tostring(node) for node in tree if not node.get("id")]
+            self.assertEqual(static(original), static(changed))
 
     def test_missing_svg_field_fails_before_update(self):
         with self.assertRaises(ValueError):

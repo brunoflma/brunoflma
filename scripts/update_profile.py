@@ -1,17 +1,18 @@
 """Refresh the responsive metrics panels from GitHub's public repositories endpoint."""
 import argparse
-import html
 import json
 import os
-import re
 import urllib.request
 import xml.etree.ElementTree as ET
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 USERNAME = "brunoflma"
 ROOT = Path(__file__).resolve().parents[1]
-ASSETS = (ROOT / "assets/showcase.svg", ROOT / "assets/showcase-mobile.svg")
+ASSETS = (ROOT / "assets/lex-profile/activity-v4.svg", ROOT / "assets/lex-profile/activity-v4-mobile.svg")
+LOCAL_ZONE = timezone(timedelta(hours=-3))  # America/Fortaleza
+SVG = "http://www.w3.org/2000/svg"
+ET.register_namespace("", SVG)
 
 
 def fetch_repositories():
@@ -45,7 +46,8 @@ def summarize(repositories, today):
         key=lambda r: (r["pushed_at"], r["name"]), reverse=True,
     )[:3]
     return {"projects": len(projects), "stars": sum(r["stargazers_count"] for r in projects),
-            "recent": [{"name": r["name"], "date": r["pushed_at"][:10]} for r in recent],
+            "recent": [{"name": r["name"], "date": datetime.fromisoformat(
+                r["pushed_at"].replace("Z", "+00:00")).astimezone(LOCAL_ZONE).date().isoformat()} for r in recent],
             "as_of": today.isoformat()}
 
 
@@ -57,21 +59,53 @@ def compact_number(value):
 
 
 def render(source, data):
+    tree = ET.fromstring(source)
+    atlas = json.loads((ROOT / "scripts/profile-glyphs.json").read_text(encoding="utf-8"))
+    mobile = tree.get("width") == "600"
     values = {"metric-projects": compact_number(data["projects"]),
               "metric-stars": compact_number(data["stars"]),
-              "updated-at": "Dados públicos · " + datetime.fromisoformat(data["as_of"]).strftime("%d/%m/%Y")}
+              "updated-at": "Atualizado em " + datetime.fromisoformat(data["as_of"]).strftime("%d/%m/%Y")}
     for index in range(3):
         item = data["recent"][index] if index < len(data["recent"]) else None
         name = item["name"] if item else "—"
-        values[f"recent-name-{index}"] = name if len(name) <= 24 else name[:23] + "…"
+        limit = 26 if mobile else 38
+        values[f"recent-name-{index}"] = name if len(name) <= limit else name[:limit - 1] + "…"
         values[f"recent-date-{index}"] = datetime.fromisoformat(item["date"]).strftime("%d/%m") if item else ""
     for field, value in values.items():
-        pattern = rf'(<text\b[^>]*\bid="{re.escape(field)}"[^>]*>).*?(</text>)'
-        source, count = re.subn(pattern, lambda m, value=value: m[1] + html.escape(value) + m[2], source, flags=re.DOTALL)
-        if count != 1:
+        matches = tree.findall(f'.//{{{SVG}}}g[@id="{field}"]')
+        if len(matches) != 1:
             raise ValueError(f"Expected exactly one SVG field: {field}")
-    ET.fromstring(source)
-    return source
+        target = matches[0]
+        font = atlas[target.attrib["data-face"]]
+        glyphs = [font["characters"][char] for char in value]
+        size = float(target.attrib["data-size"])
+        scale = size / font["units"]
+        x, y = float(target.attrib["data-x"]), float(target.attrib["data-y"])
+        if target.attrib["data-align"] == "center":
+            x -= sum(glyph["advance"] for glyph in glyphs) * scale / 2
+        x = round(x, 2)
+        for child in list(target):
+            target.remove(child)
+        target.set("aria-label", value)
+        drawing = ET.SubElement(target, f"{{{SVG}}}g", {
+            "fill": target.attrib["data-color"],
+            "transform": f"translate({x:g} {y:g}) scale({scale:.6f} {-scale:.6f})",
+        })
+        cursor = 0
+        for glyph in glyphs:
+            if glyph["path"]:
+                ET.SubElement(drawing, f"{{{SVG}}}path", {
+                    "transform": f"translate({cursor:.2f} 0)", "d": glyph["path"],
+                })
+            cursor += glyph["advance"]
+    title, desc = tree.find(f"{{{SVG}}}title"), tree.find(f"{{{SVG}}}desc")
+    if title is None or desc is None:
+        raise ValueError("Missing SVG title or description")
+    title.text = f"Atividade pública: {data['projects']} projetos e {data['stars']} estrelas"
+    stamp = datetime.fromisoformat(data["as_of"]).strftime("%d/%m/%Y")
+    desc.text = (f"Consulta em {stamp}. Projetos públicos próprios, sem forks e sem o repositório do perfil. "
+                 "Datas em America/Fortaleza. Fonte: GitHub API.")
+    return ET.tostring(tree, encoding="unicode")
 
 
 def main():
@@ -80,7 +114,7 @@ def main():
     mode.add_argument("--write", action="store_true", help="Update both local SVG files")
     mode.add_argument("--check", action="store_true", help="Fail when a panel needs refreshing")
     args = parser.parse_args()
-    data = summarize(fetch_repositories(), datetime.now(timezone.utc).date())
+    data = summarize(fetch_repositories(), datetime.now(LOCAL_ZONE).date())
     # Fetch and validate every output before touching either file.
     sources = {path: path.read_text(encoding="utf-8") for path in ASSETS}
     rendered = {path: render(source, data) for path, source in sources.items()}
