@@ -41,11 +41,11 @@ Mantenho projetos abertos como **JurisprudênciaIA MCP, Jusmanizer, Claude Sessi
 <a href="https://brunoflma.github.io/jusmanizer/">
   <picture>
     <source media="(max-width: 1100px)" srcset="./assets/lex-profile/jusmanizer-mobile.svg">
-    <img src="./assets/lex-profile/jusmanizer.svg" width="100%" alt="Jusmanizer. Revisão do estilo jurídico em português, preservando fatos, fontes e transcrições. Conheça o projeto.">
+    <img src="./assets/lex-profile/jusmanizer.svg" width="100%" alt="Jusmanizer. O argumento é seu. A escrita também. Revisão de estilo e de língua no texto jurídico, preservando fatos, fontes e transcrições. Conheça o projeto.">
   </picture>
 </a>
 
-**[Jusmanizer](https://brunoflma.github.io/jusmanizer/)** é uma skill de revisão do estilo jurídico em português, preservando fatos, fontes, pedidos e transcrições. [Código e exemplos](https://github.com/brunoflma/jusmanizer).
+**[Jusmanizer](https://brunoflma.github.io/jusmanizer/)** é uma skill de revisão de estilo e de língua para texto jurídico em português, preservando fatos, fontes, pedidos e transcrições. [Código e exemplos](https://github.com/brunoflma/jusmanizer).
 
 <a href="https://brunoflma.github.io/claude-session-linker/">
   <picture>
