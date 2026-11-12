@@ -12,7 +12,7 @@ Mantenho projetos abertos como **JurisprudênciaIA MCP, Jusmanizer, Claude Sessi
 <a href="https://github.com/brunoflma?tab=repositories">
   <picture>
     <source media="(max-width: 1100px)" srcset="./assets/lex-profile/activity-v4-mobile.svg">
-    <img src="./assets/lex-profile/activity-v4.svg" width="100%" alt="Atividade pública: 8 projetos próprios e 50 estrelas. Envios recentes: disserogateway (11/11); jusmanizer (11/11); claude-session-linker (30/10).">
+    <img src="./assets/lex-profile/activity-v4.svg" width="100%" alt="Atividade pública: 8 projetos próprios e 51 estrelas. Envios recentes: disserogateway (12/11); jusmanizer (11/11); claude-session-linker (30/10).">
   </picture>
 </a>
 
