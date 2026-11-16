@@ -14,7 +14,7 @@ def git(*args):
 def main():
     if os.environ.get('CIRCLECI')!='true' or os.environ.get('CIRCLE_BRANCH')!='main':
         raise SystemExit('Publication requires CircleCI on main')
-    if git('config','--get','remote.origin.url').rstrip('.git').rstrip('/') not in (
+    if git('config','--get','remote.origin.url').removesuffix('.git').rstrip('/') not in (
             'https://github.com/brunoflma/brunoflma','git@github.com:brunoflma/brunoflma'):
         raise SystemExit('Unexpected repository')
     if git('rev-parse','HEAD')!=os.environ['CIRCLE_SHA1']:

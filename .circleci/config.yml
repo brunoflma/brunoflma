@@ -2,7 +2,7 @@ version: 2.1
 parameters:
   publish_profile:
     type: boolean
-    default: false
+    default: true
 jobs:
   refresh:
     docker:
