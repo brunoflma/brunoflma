@@ -9,8 +9,7 @@ from unittest.mock import patch
 from update_profile import ASSETS, ROOT, SVG, main, render, summarize
 
 
-PROJECTS = [('jurisprudenciaia', 'https://brunoflma.github.io/jurisprudenciaia-mcp/'),
-            ('jusmanizer', 'https://brunoflma.github.io/jusmanizer/'),
+PROJECTS = [('jusmanizer', 'https://brunoflma.github.io/jusmanizer/'),
             ('session-linker', 'https://brunoflma.github.io/claude-session-linker/'),
             ('md-studio', 'https://brunoflma.github.io/md-studio/'),
             ('eluxi', 'https://eluxi.bfldevlabs.studio/'),

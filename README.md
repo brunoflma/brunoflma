@@ -5,7 +5,7 @@
 
 Sou **Bruno Ferreira**. Trabalho há mais de 15 anos com infraestrutura, sistemas, redes e segurança. Hoje aplico essa experiência em **DevOps, Cloud e IA generativa**, criando ferramentas para pesquisa, documentos e produtividade.
 
-Mantenho projetos abertos como **JurisprudênciaIA MCP, Jusmanizer, Claude Session Linker e MD Studio** e desenvolvo as soluções jurídicas do ecossistema **Lex Operandi**.
+Mantenho projetos abertos como **Jusmanizer, Claude Session Linker e MD Studio** e desenvolvo as soluções jurídicas do ecossistema **Lex Operandi**.
 
 <a name="atividade"></a>
 
@@ -28,15 +28,6 @@ Mantenho projetos abertos como **JurisprudênciaIA MCP, Jusmanizer, Claude Sessi
   </picture>
 </a>
 </p>
-
-<a href="https://brunoflma.github.io/jurisprudenciaia-mcp/">
-  <picture>
-    <source media="(max-width: 1100px)" srcset="./assets/lex-profile/jurisprudenciaia-mobile.svg">
-    <img src="./assets/lex-profile/jurisprudenciaia.svg" width="100%" alt="JurisprudênciaIA MCP. Conector MCP para pesquisa jurídica no Claude, Codex e outros clientes compatíveis. Conheça o projeto.">
-  </picture>
-</a>
-
-**[JurisprudênciaIA MCP](https://brunoflma.github.io/jurisprudenciaia-mcp/)** conecta a pesquisa jurídica do serviço JurisprudênciaIA a clientes MCP. O conector cuida da integração e do acesso; a pesquisa é oferecida pelo serviço. [Código e documentação](https://github.com/brunoflma/jurisprudenciaia-mcp).
 
 <a href="https://brunoflma.github.io/jusmanizer/">
   <picture>
