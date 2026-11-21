@@ -12,7 +12,7 @@ Mantenho projetos abertos como **Jusmanizer, Claude Session Linker e MD Studio**
 <a href="https://github.com/brunoflma?tab=repositories">
   <picture>
     <source media="(max-width: 1100px)" srcset="./assets/lex-profile/activity-v4-mobile.svg">
-    <img src="./assets/lex-profile/activity-v4.svg" width="100%" alt="Atividade pública: 8 projetos próprios e 53 estrelas. Envios recentes: disserogateway (18/11); claude-session-linker (16/11); md-studio (16/11).">
+    <img src="./assets/lex-profile/activity-v4.svg" width="100%" alt="Atividade pública: 8 projetos próprios e 55 estrelas. Envios recentes: jusmanizer (20/11); disserogateway (19/11); claude-session-linker (16/11).">
   </picture>
 </a>
 
